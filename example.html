@@ -1,0 +1,22 @@
+<html>
+<head>
+	<title>
+		notification bar
+	</title>
+	<style>
+	body {
+		margin-right	:
+	}
+	</style>
+	<script src="NotifyBar.js" type="text/javascript"></script>
+</head>
+<body>
+	<h1>Example of notification bar!</h1>
+	<script>
+		var message	= 'Pacmaze is available on <a href="https://chrome.google.com/webstore/detail/ggeliggglgbhachnoljoieibaneidchi" target="_blank">Chrome Web Store</a>';
+		NotifyBar(message,function(){
+			return navigator.userAgent.match(/chrome/i) ? true : false
+		});
+	</script>
+</body>
+</html>
